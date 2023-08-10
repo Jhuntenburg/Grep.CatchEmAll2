@@ -1,14 +1,29 @@
 # Part 1
 ### a)
-
-
-
+ ggrep -P '^beed' filescan_00.1 > beedrill.txt
+  ggrep -P '^blast' filescan_00.1 > blastoise.txt
+   ggrep -P '^bulb' filescan_00.1 > bulbasaur.txt
+ ggrep -P '^butt' filescan_00.1 > butterfree.txt
 
 ### b)
+ggrep -P 'd$' filescan_00.2 > charizard.txt
+ggrep -P 'r$' filescan_00.2 > charmander.txt
+ggrep -P 'n$' filescan_00.2 > charmeleon.txt
 
 
 
 ### c)
+
+ ggrep -P '^pika' filescan_00.3 > pikachu.txt
+ ggrep -P '^iv' filescan_00.3 > ivysaur.txt
+ ggrep -P '^m' filescan_00.3 > meowth.txt
+
+
+  ggrep -P '^p' filescan_00.4 > psyduck.txt
+ggrep -P '^s' filescan_00.4 > squirtle.txt
+ ggrep -P '^v' filescan_00.4 > venusaur.txt
+ ggrep -P '^w' filescan_00.4 > wartortle.txt
+
 
 
 

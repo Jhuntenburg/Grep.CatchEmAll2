@@ -17,6 +17,7 @@ ggrep -P 'n$' filescan_00.2 > charmeleon.txt
  ggrep -P '^pika' filescan_00.3 > pikachu.txt
  ggrep -P '^iv' filescan_00.3 > ivysaur.txt
  ggrep -P '^m' filescan_00.3 > meowth.txt
+ ggrep -P '^j' filescan_00.3 > jigglypuff.txt
 
 
   ggrep -P '^p' filescan_00.4 > psyduck.txt
@@ -26,7 +27,7 @@ ggrep -P '^s' filescan_00.4 > squirtle.txt
 
 
 
-
+.*
 
 
 
@@ -46,6 +47,30 @@ ggrep -P '^s' filescan_00.4 > squirtle.txt
 
 
 ### b)
+ggrep -c 'b.*e.*e.*d.*r.*i.*l.*l' filescan_00.1 =40
+ ggrep -c 'b.*l.*a.*s.*t.*o.*i.*s.*e' filescan_00.1=38
+ggrep -c 'b.*u.*l.*b.*a.*s.*a.*u.*r' filescan_00.1=30
+ggrep -c 'b.*u.*t.*t' filescan_00.1 = 38
+
+then surhabi found this
+
+joe@Admin-PC1 captured % find . -type f | xargs wc -l
+      37 ./wartortle.txt
+      38 ./blastoise.txt
+      30 ./bulbasaur.txt
+ 1     40 ./charizard.txt
+ 2     40 ./beedrill.txt
+      38 ./butterfree.txt
+       1 ./instruction.txt
+      32 ./venusaur.txt
+      33 ./ivysaur.txt
+ 3     40 ./pikachu.txt
+      34 ./squirtle.txt
+      33 ./meowth.txt
+      36 ./charmander.txt
+      37 ./charmeleon.txt
+      37 ./psyduck.txt
+     506 total
 
 
 
